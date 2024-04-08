@@ -20,7 +20,7 @@ dependencies {
     implementation 'org.springframework:spring-oxm'
     implementation group: 'org.springframework.cloud', name: 'spring-cloud-aws-context', version: awsVersion
     implementation group: 'org.springframework.cloud', name: 'spring-cloud-aws-autoconfigure', version: awsVersion
-    implementation(group: 'org.springframework.cloud', name: 'spring-cloud-gcp-starter-storage', version: gcpVersion) {
+    implementation(group: 'com.google.cloud', name: 'spring-cloud-gcp-starter-storage', version: gcpVersion) {
         exclude group: 'javax.annotation', module: 'javax.annotation-api'
     }
     testImplementation group: 'com.redis', name: 'spring-batch-redis', version: springBatchRedisVersion, classifier: 'tests'
