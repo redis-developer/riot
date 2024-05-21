@@ -54,6 +54,8 @@ dependencies {
     implementation 'com.mysql:mysql-connector-j'
     implementation 'org.postgresql:postgresql'
     implementation 'org.springframework:spring-oxm'
+    implementation platform('com.amazonaws:aws-java-sdk-bom:1.12.693')
+    implementation 'com.amazonaws:aws-java-sdk-s3'
     testImplementation 'org.springframework.boot:spring-boot-starter-jdbc'
     testImplementation group: 'com.redis', name: 'spring-batch-redis-test', version: springBatchRedisVersion
     testImplementation 'org.awaitility:awaitility'
